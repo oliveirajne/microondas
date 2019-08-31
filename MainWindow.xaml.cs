@@ -40,13 +40,13 @@ namespace microondas
             }
             else if (Convert.ToInt32(lblTempo.Text) > 0 && Convert.ToInt32(lblTempo.Text) <= 120)
             {
-                if (Convert.ToInt32(lblPotencia.Text) > 0 && Convert.ToInt32(lblPotencia.Text) <= 8)
+                if (Convert.ToInt32(lblPotencia.Text) > 0 && Convert.ToInt32(lblPotencia.Text) <= 10)
                 {
                     Contador(Convert.ToInt32(lblTempo.Text));
                 }
                 else
                 {
-                    MessageBox.Show("Potência: Apenas números entre 1 e 8", "AVISO", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show("Potência: Apenas números entre 1 e 10", "AVISO", MessageBoxButton.OK, MessageBoxImage.Warning);
                 }
                 
             }
@@ -99,7 +99,9 @@ namespace microondas
             string txtSimbolo = "";
             string texto = "AQUECENDO";
             txtString.Text = texto;
-            
+
+            btnIniciar.IsEnabled = false;
+            btnInicioRapido.IsEnabled = false;
 
             if (tempo > 60)
             {
@@ -164,7 +166,8 @@ namespace microondas
                         
                         if (i < 2)
                         {
-                            txtString.Text = txtString.Text + "AQUECIDO";
+                            FinalizaAquecimento(txtString.Text);
+                            //txtString.Text = txtString.Text + "AQUECIDO";
                         }
                         
                     }));
@@ -180,6 +183,8 @@ namespace microondas
         public void FinalizaAquecimento(string texto)
         {
             txtString.Text = texto + "AQUECIDO";
+            btnIniciar.IsEnabled = true;
+            btnInicioRapido.IsEnabled = true;
         }
 
     }

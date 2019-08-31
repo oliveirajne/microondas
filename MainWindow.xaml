@@ -5,8 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:microondas"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="553.106" Width="1084.536">
+    <Canvas>
+        <Label Content="Tempo:" FontSize="20" Height="42" Canvas.Left="689" Canvas.Top="135" Width="105"/>
+        <Label Content="Potência:" FontSize="20" Height="36" Canvas.Left="689" Canvas.Top="185" Width="105"/>
+        <TextBox x:Name="lblTempo" TextWrapping="Wrap" FontSize="20" Height="36" Canvas.Left="794" Canvas.Top="135" Width="154"/>
+        <TextBox x:Name="lblPotencia" TextWrapping="Wrap" FontSize="20" Height="36" Canvas.Left="794" Canvas.Top="185" Width="154"/>
+        <Button x:Name="btnIniciar" Content="INICIAR" FontSize="20" Click="BtnIniciar_Click" Height="45" Canvas.Left="689" Canvas.Top="259" Width="142"/>
+        <Button x:Name="btnInicioRapido" Content="INÍCIO RÁPIDO" FontSize="20" Click="BtnInicioRapido_Click" Height="45" Canvas.Left="862" Canvas.Top="259" Width="142"/>
+        <Label x:Name="lblTimerM" Content="0" Height="82" Canvas.Left="825" Canvas.Top="26" Width="44" FontSize="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="0.919,0.541"/>
+        <Label x:Name="lblTimerS" Content="00" Height="82" Canvas.Left="880" Canvas.Top="28" Width="77" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Content=":" Height="64" Canvas.Left="862" Canvas.Top="26" Width="25" FontSize="48"/>
+        <TextBox x:Name="txtTeste" Visibility="Hidden" Height="86" Canvas.Left="361" TextWrapping="Wrap" Text="00:00" Canvas.Top="135" Width="273" FontSize="48"/>
+        <TextBox x:Name="txtString" Height="404" Canvas.Left="65" TextWrapping="Wrap" Text="" Canvas.Top="47" Width="569" FontSize="14"/>
+    </Canvas>
 </Window>

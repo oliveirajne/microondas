@@ -1,0 +1,15 @@
+C:\Desenvolvimento\microondas\bin\Debug\microondas.exe.config
+C:\Desenvolvimento\microondas\bin\Debug\microondas.exe
+C:\Desenvolvimento\microondas\bin\Debug\microondas.pdb
+C:\Desenvolvimento\microondas\obj\Debug\microondas.csprojAssemblyReference.cache
+C:\Desenvolvimento\microondas\obj\Debug\MainWindow.g.cs
+C:\Desenvolvimento\microondas\obj\Debug\App.g.cs
+C:\Desenvolvimento\microondas\obj\Debug\microondas_MarkupCompile.cache
+C:\Desenvolvimento\microondas\obj\Debug\microondas_MarkupCompile.lref
+C:\Desenvolvimento\microondas\obj\Debug\MainWindow.baml
+C:\Desenvolvimento\microondas\obj\Debug\microondas.g.resources
+C:\Desenvolvimento\microondas\obj\Debug\microondas.Properties.Resources.resources
+C:\Desenvolvimento\microondas\obj\Debug\microondas.csproj.GenerateResource.cache
+C:\Desenvolvimento\microondas\obj\Debug\microondas.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\microondas\obj\Debug\microondas.exe
+C:\Desenvolvimento\microondas\obj\Debug\microondas.pdb
